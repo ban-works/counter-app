@@ -2,8 +2,12 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import CounterBlock from "../components/counter-block";
+import CounterBlock from "../components/CounterBlock";
 
+//context ici
+//provider en haut du return
+//button pour modifier la variable de theme
+// dans les buttons se baser sur la valeur du theme
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -29,6 +33,9 @@ const Home: NextPage = () => {
           />
           <CounterBlock 
             firstButton={5} 
+            secondButton={10} 
+          />
+           <CounterBlock 
             secondButton={10} 
           />
           <CounterBlock 
